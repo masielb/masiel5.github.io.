@@ -4,28 +4,41 @@
 <head>
     <meta charset="utf-8">
     <title>USSJ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+<!--SLICKNAV CSS CDN LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--REGULAR STYLESHEET LINK-->
     <link rel="stylesheet" type="text/css" href="styles.css">
+<!--GOOGLE FONTS LINK-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--JQUERY CDN LINK-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--SLICKNAV CDN LINK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<!--  Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+ <script type="text/javascript">
+          $(document).ready(function () {
+            $("#nav_menu").slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+</script>
+
 </head>
-    
+
 <body>
+    <nav id="mobilemenu"></nav>
     <img src="UNClogo.jpg" alt="UNC Logo">
-    <nav>
+    <nav id="nav_menu">
         <ul class="menubar">
             <li class="menuitem"><input type="text" placeholder="Search"></li>
             <li class="menuitem">HOME</li>
-            
+            <li class="menuitem">BROWSE</li>
             <li class="menuitem">SUBMISSIONS</li>
-            <li class="menuitem">NOTIFICATIONS</li>
             <li class="menuitem">PHOTOS</li>
-          
-          
             <li class="menuitem">ABOUT</li>
         </ul>
-        
     </nav>
-    
    
         <div class="jumbotron">
         <div class="welcome">
@@ -34,23 +47,23 @@
         </div>
   
         <div class="box projects shots">
-        <h2>ARTICLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>NEW</h2>
+            <p>Lukas Bärfuss has won this year’s Georg Büchner Prize – arguably the most prestigious German-language literary award.</p>
         </div>
         
         <div class="box projects">
-        <h2>ARTICLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>NEW</h2>
+            <p>The department is excited to remind all of the GSLL Research Roundtable in Toy Lounge this Wednesday November 6 at 12pm. </p>
         </div>
         
         <div class="box projects">
-        <h2>ARTICLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>NEW</h2>
+            <p>The UNC German Club will be hosting Oktoberfest (Alkoholfrei) in the Carolina Union Gallery on Friday, November 8, 4-8 pm!</p>
         </div>
         
         <div class="box projects">
-        <h2>ARTICLE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>NEW</h2>
+            <p>Come visit the German Club at 5pm in Cobb to participate in game night, which will feature plenty of German food and games.</p>
             </div>
         </div>
     
