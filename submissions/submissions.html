@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Submissions</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sub-styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#nav_menu").slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav id="mobilemenu"></nav>
+    <img src="UNClogo.jpg" alt="UNC Logo">
+    <nav id="nav_menu">
+        <ul class="menubar">
+            <li class="menuitem"><input type="text" placeholder="Search"></li>
+            <li class="menuitem"><a href=../index.html>HOME </a> </li> <li class="menuitem">BROWSE</li>
+            <li class="menuitem"><a href=#>SUBMISSIONS</a></li>
+            <li class="menuitem">PHOTOS</li>
+            <li class="menuitem"><a href="about/about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Consider publishing your relevant articles with us!</h1>
+        <p>The USSJ is a student-run journal publishing a wide variety of writing related to Slavic studies. Undergraduate work is collected semiannually in the form of translations, essays, travel writings, and other relevant works. UNC undergraduates with an interest in any Slavic-related disciple are encouraged to submit their own work for inclusion in the publication.</p>
+        <p>You can do so on this page, please be sure to fill out all fields when submitting and only choose pdf or doc filetypes, as others cannot be displayed here. Your email address will be used to contact you when your article is ready for publishing online. If your topic isn't one listed, please include it in the additional information box. If you have any further questions, please contact us at ussjournal@unc.edu</p>
+        <h1> Submissions Form</h1>
+
+        <form>
+            <div class="form-group">
+
+
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                Last name:<br>
+                <input type="text" name="lastname"><br>
+
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select a publishing year:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Select all that apply:</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>Literature</option>
+                    <option>History</option>
+                    <option>Linguistics</option>
+                    <option>Economics</option>
+                    <option>Politics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Give any additional information you'd like the USSJ to receive about your article:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br>
+                <label for="exampleFormControlFile1">Upload your article</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+            </div>
+        </form>
+
+
+
+        <div class="box projects ">
+            <h2>NEW article</h2>
+            <p>Submitted by Arnold Swartz in August 2019: Help wanted in Moscow: how full employment is a burden on Russian taxpayers. </p>
+        </div>
+
+        <div class="box projects">
+            <h2>NEW article</h2>
+            <p>Submitted by Martin Shkreli in October of 2019: How Oktoberfest (Alkoholfrei) is motivating young Americans to participate in culture. </p>
+        </div>
+
+        <div class="box projects">
+            <h2>NEW article</h2>
+            <p>Submitted by Daniel Roussef in November 2019: Ivan the Terrible was terrible, so why is he so fondly remembered among Floridians? </p>
+        </div>
+
+        <div class="box projects">
+            <h2>NEW article</h2>
+            <p>Submitted by Amanda Shirt in December 2019: Corn cobs were invented in 1917 by Vladimir Lenin, and other revolutionary fun-facts.</p>
+        </div>
+    </main>
+
+
+</body></html>
