@@ -142,7 +142,9 @@ nav {
     font-family: 'Roboto', sans-serif;
     color: #007FAE;
 }
-
+.slicknav_menu {
+           display:none;
+    }
 footer {
     height: 100px;
     grid-column: 1/5;
@@ -163,6 +165,7 @@ footer {
     
     .slicknav_menu {
         background: #12294b;
+           display:block;
     }
     
     .menubar {
