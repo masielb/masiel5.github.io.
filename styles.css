@@ -2,7 +2,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     display: grid;
@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    height: 160px;
+    max-height: 160px;
     grid-row: 1/2;
     grid-column: 1/2;
     z-index: 10;
@@ -37,13 +37,17 @@ nav {
 
 .menuitem {
     display: inline-block;
-    color: white;
     box-sizing: border-box;
     border-radius: 20px;
     margin-left: 2em;
 }
 
-.menuitem:hover {
+.menuitem a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuitem a:hover {
     color: lightblue;
 }
 
@@ -87,6 +91,59 @@ nav {
     margin-left: 20vw;
 }
 
+.publications-page {
+    grid-row: 2/6;
+    grid-column: 1/5;
+}
+
+.publications {
+    background: white;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publications-intro {
+    width: 56%;
+    color: white;
+    background-color: #4B9CD3;
+    opacity: 0.65;
+    padding: .7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publications-intro h1 {
+    padding: 0;
+}
+
+.publication {
+    margin-top: 10px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    border-spacing: border-box;
+    border-bottom: 1px solid #13294B;
+}
+
+.publication h2 {
+    color: #13294B;
+}
+
+.publication ul {
+    list-style: none;
+}
+
+.publication > a {
+    font-family: 'Roboto', sans-serif;
+    color: #007FAE;
+}
+
 footer {
     height: 100px;
     grid-column: 1/5;
@@ -127,5 +184,25 @@ footer {
     }
     .shots {
     margin-left: 0;
-}
+    }
+
+    .publications-page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .publications-intro {
+        width: 100%;
+    }
+    .publications {
+        width: 100%;
+    }
+    .publication {
+        width: 50%;
+    }
+    .publication h2 {
+        width: 100%;
+    }
 }

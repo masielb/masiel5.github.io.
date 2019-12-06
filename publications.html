@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>USSJ</title>
+    <meta charset="utf-8">
+<!--SLICKNAV CSS CDN LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!--REGULAR STYLESHEET LINK-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<!--GOOGLE FONTS LINK-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<!--JQUERY CDN LINK-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--SLICKNAV CDN LINK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<!--  Now add the following script to create a slicknav (mobile) version of your navigation menu, then attach it to an empty nav element you'll add before your navigation menu in your HTML. In this case, I've given my navigation menu the .nav_menu class; insert the class attached to your own navigation menu where you see .nav_menu in the following script. In the HTML, you'll see I've added an empty nav element just before .nav_menu and given it the ID #mobilemenu. That ID appears in the script below, too. Insert the class or ID name you've attached to your empty nav element where you see #mobilemenu in the following script. -->
+ <script type="text/javascript">
+          $(document).ready(function () {
+            $("#nav_menu").slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+</script>
+</head>
+
+<body>
+    <nav id="mobilemenu"></nav>
+    <img src="UNClogo.jpg" alt="UNC Logo">
+    <nav id="nav_menu">
+        <ul class="menubar">
+            <li class="menuitem"><input type="text" placeholder="Search"></li>
+            <li class="menuitem"><a href="index.html">HOME</a></li>
+            <li class="menuitem"><a href="publications.html">PUBLICATIONS</a></li>
+            <li class="menuitem">SUBMISSIONS</li>
+            <li class="menuitem">ABOUT</li>
+        </ul>
+    </nav>
+    
+    <main class="publications-page">
+        <div class="publications">
+            <div class="publications-intro">
+                <h1>PUBLICATIONS</h1>
+                <p>Below are all released volumes of the USSJ.</p>
+            </div>
+            
+            <div class="publication">
+                <h2>Spring 2021</h2>
+                <ul>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                </ul>
+            </div>
+            <div class="publication">
+                <h2>Fall 2020</h2>
+                <ul>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                </ul>
+            </div>
+            <div class="publication">
+                <h2>Spring 2020</h2>
+                <ul>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                    <li><a href="#">Article Title</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
