@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    max-height: 160px;
+    height: 160px;
     grid-row: 1/2;
     grid-column: 1/2;
     z-index: 10;
@@ -50,7 +50,6 @@ nav {
 .menuitem a:hover {
     color: lightblue;
 }
-
 
 .jumbotron {
     background: url(led_3.jpg) no-repeat center center fixed;
