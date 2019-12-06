@@ -38,13 +38,17 @@ nav {
 
 .menuitem {
     display: inline-block;
-    color: white;
     box-sizing: border-box;
     border-radius: 20px;
     margin-left: 2em;
 }
 
-.menuitem:hover {
+.menuitem a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuitem a:hover {
     color: lightblue;
 }
 
