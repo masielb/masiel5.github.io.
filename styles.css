@@ -47,6 +47,12 @@ nav {
     color: lightblue;
 }
 
+/* to remove the default blue formatting of the links */
+a { 
+    color: white;
+    text-decoration: none;
+}
+
 
 .jumbotron {
     background: url(led_3.jpg) no-repeat center center fixed;
